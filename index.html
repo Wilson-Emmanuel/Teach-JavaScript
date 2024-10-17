@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            margin-top: 100px;
+            width: 100%;
+            height: 100%;
+            background-color: #f1f5f9;
+        }
+        #container {
+            margin: 0 auto;
+            background-color: #01394a;
+            width: 30%;
+            border-radius: 15px;
+            padding: 20px;
+        }
+        #calculator-title {
+            text-align: center;
+            color: #fff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        #display {
+            height: 60px;
+            background-color:#64748b;
+            text-align: left;
+            padding-top: 10px;
+            padding-left: 5px;
+            color: #fff;
+        }
+        #controls {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        #controls button {
+            padding: 20px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+
+        #controls button:hover {
+            background-color: #e0e0e0;
+        }
+        #controls .span-all {
+            grid-column: span 4;
+        }
+    </style>
+    <script src="lesson1.js"></script>
+</head>
+<body>
+<div id="container">
+    <h2 id="calculator-title">Calculator</h2>
+    <div id="calculator-container">
+        <div id="display">
+  1000
+        </div>
+        <div id="controls">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+
+            <button class="span-all">=</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
